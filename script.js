@@ -1,6 +1,4 @@
-// small UX helpers: typewriter, smooth scroll, and contact handler
-
-// typewriter phrases
+// Typewriter
 const phrases = [
   'Machine Learning',
   'Deep Learning',
@@ -8,10 +6,8 @@ const phrases = [
   'Model Deployment',
   'SQL & Python'
 ];
-
 const typeEl = document.getElementById('typewriter');
 let p = 0, i = 0, deleting = false;
-
 function tick(){
   const current = phrases[p];
   if(!deleting){
@@ -25,7 +21,7 @@ function tick(){
 }
 document.addEventListener('DOMContentLoaded', tick);
 
-// smooth internal links
+// Smooth scroll for internal links
 document.querySelectorAll('a[href^="#"]').forEach(a=>{
   a.addEventListener('click', e=>{
     const href = a.getAttribute('href');
@@ -37,7 +33,27 @@ document.querySelectorAll('a[href^="#"]').forEach(a=>{
   });
 });
 
-// basic contact form handler (opens mailto)
+// Sidebar active state on scroll
+const sections = document.querySelectorAll('main section[id]');
+const navLinks = document.querySelectorAll('.side-nav .nav-link');
+
+function onScroll(){
+  const y = window.scrollY;
+  sections.forEach(section=>{
+    const top = section.offsetTop - 120;
+    const bottom = top + section.offsetHeight;
+    const id = section.getAttribute('id');
+    if(y >= top && y <= bottom){
+      navLinks.forEach(l=>l.classList.remove('active'));
+      const active = document.querySelector(`.side-nav .nav-link[href="#${id}"]`);
+      if(active) active.classList.add('active');
+    }
+  });
+}
+window.addEventListener('scroll', onScroll, {passive:true});
+onScroll();
+
+// Contact form (mailto)
 const form = document.getElementById('contactForm');
 const notice = document.getElementById('formNotice');
 form.addEventListener('submit', (e)=>{
@@ -51,10 +67,10 @@ form.addEventListener('submit', (e)=>{
   }
   const subject = encodeURIComponent(`Portfolio message from ${name}`);
   const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${msg}`);
-  // opens user's email client
   window.location.href = `mailto:collegevenkadesh@gmail.com?subject=${subject}&body=${body}`;
   notice.textContent = 'Opening your email client...';
 });
 
-// auto year
+// set years
 document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById('yearFooter').textContent = new Date().getFullYear();

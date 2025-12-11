@@ -8,214 +8,202 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="stage" aria-hidden="true">
-    <div class="orb a"></div>
-    <div class="orb b"></div>
-    <div class="orb c"></div>
-  </div>
-
-  <header class="nav-wrap">
-    <div class="nav container">
-      <div class="brand">
-        <div class="logo">VK</div>
-        <div class="brand-text">
-          <div class="name">Venkadesh K</div>
-          <div class="role">Data Scientist — Final-year B.Tech (AI & Data Science)</div>
-        </div>
+  <div class="app">
+    <!-- LEFT SIDEBAR -->
+    <aside class="sidebar">
+      <div class="profile-box">
+        <img src="images/profile.jpg" alt="Venkadesh K" class="profile-img">
+        <h1 class="sidebar-name">Venkadesh K</h1>
+        <p class="sidebar-role">Data Scientist</p>
       </div>
 
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#certifications">Certifications</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+      <nav class="side-nav">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#contact" class="nav-link">Contact</a>
       </nav>
-    </div>
-  </header>
 
-  <main class="container">
-    <!-- HERO -->
-    <section id="home" class="hero card">
-      <div class="hero-left">
-        <div class="kicker">Machine Learning • Deep Learning • Data Visualization</div>
-        <h1>Hi, I’m <span class="gradient-name">Venkadesh K</span></h1>
-        <p class="lead">Final-year B.Tech AI & Data Science student. I build ML models, analyze complex datasets, and create visual, production-ready solutions.</p>
-
-        <div class="typewrap">
-          <div class="type-label">I work with</div>
-          <div class="typewriter" id="typewriter"></div>
+      <div class="side-footer">
+        <div class="socials">
+          <a href="https://github.com/venkadesh15" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/venkadesh-k-2003ai" target="_blank" rel="noopener">LinkedIn</a>
         </div>
-
-        <div class="hero-ctas">
-          <a class="btn primary" href="#projects">View Projects</a>
-          <a class="btn ghost" href="resume.pdf" download>Download Resume</a>
-        </div>
-
-        <div class="badges">
-          <span class="badge">Python</span>
-          <span class="badge">TensorFlow</span>
-          <span class="badge">FastAPI</span>
-          <span class="badge">PowerBI</span>
-        </div>
+        <div class="copyright">© <span id="year"></span> Venkadesh K</div>
       </div>
+    </aside>
 
-      <aside class="hero-right">
-        <div class="card mini">
-          <div class="avatar">VK</div>
-          <div class="vinfo">
-            <strong>Venkadesh K</strong>
-            <div class="muted">Mayiladuthurai, Tamil Nadu</div>
+    <!-- MAIN CONTENT -->
+    <main class="main">
+      <!-- HERO -->
+      <section id="home" class="hero card">
+        <div class="hero-left">
+          <div class="kicker">Machine Learning • Deep Learning • Data Visualization</div>
+          <h2 class="title">Hi, I’m <span class="gradient">Venkadesh K</span></h2>
+          <p class="lead">Final-year B.Tech AI & Data Science student. I build ML models, analyze complex datasets, and deliver production-ready visualizations and APIs.</p>
+
+          <div class="typewrap">
+            <div class="type-label">I work with</div>
+            <div class="typewriter" id="typewriter"></div>
+          </div>
+
+          <div class="hero-ctas">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn ghost" href="resume.pdf" download>Download Resume</a>
+          </div>
+
+          <div class="badges">
+            <span class="badge">Python</span>
+            <span class="badge">TensorFlow</span>
+            <span class="badge">FastAPI</span>
+            <span class="badge">PowerBI</span>
           </div>
         </div>
 
-        <div class="card contact-card">
-          <div class="muted">Contact</div>
-          <div class="strong">collegevenkadesh@gmail.com</div>
-          <div class="muted">+91 8925324110</div>
-          <div class="socials">
-            <a href="https://github.com/venkadesh15" target="_blank" rel="noopener">GitHub</a>
-            <a href="https://www.linkedin.com/in/venkadesh-k-2003ai" target="_blank" rel="noopener">LinkedIn</a>
+        <div class="hero-right">
+          <div class="info-card card">
+            <div class="info-title">Contact</div>
+            <div class="info-row"><strong>Email:</strong> <a href="mailto:collegevenkadesh@gmail.com">collegevenkadesh@gmail.com</a></div>
+            <div class="info-row"><strong>Phone:</strong> +91 8925324110</div>
+            <div class="info-row"><strong>Location:</strong> Mayiladuthurai, Tamil Nadu</div>
+          </div>
+
+          <div class="info-card card">
+            <div class="info-title">Quick Links</div>
+            <div class="link-row"><a href="https://github.com/venkadesh15" target="_blank">GitHub</a></div>
+            <div class="link-row"><a href="https://www.linkedin.com/in/venkadesh-k-2003ai" target="_blank">LinkedIn</a></div>
           </div>
         </div>
-      </aside>
-    </section>
+      </section>
 
-    <!-- ABOUT -->
-    <section id="about" class="card section">
-      <h2>About Me</h2>
-      <p class="muted">
-        Final-year B.Tech Artificial Intelligence & Data Science student with hands-on experience in data analysis, visualization,
-        and machine learning through academic projects and internships. Proficient in Python, SQL, Excel and industry frameworks —
-        adept at solving problems and delivering actionable insights. (Resume & internship details included below.) :contentReference[oaicite:1]{index=1}
-      </p>
+      <!-- ABOUT -->
+      <section id="about" class="card section">
+        <h3>About Me</h3>
+        <p class="muted">
+          Final-year B.Tech Artificial Intelligence & Data Science student with hands-on experience in data analysis, visualization,
+          and machine learning through academic projects and internships. Proficient in Python, SQL, Excel and industry frameworks —
+          adept at solving problems and delivering actionable insights. (Resume & internship details included below.) :contentReference[oaicite:1]{index=1}
+        </p>
 
-      <div class="split">
-        <div>
-          <h3>Education</h3>
-          <p>Dhanalakshmi Srinivasan Engineering College — B.Tech (AI & Data Science)<br/>Current CGPA: <strong>8.1/10</strong></p>
+        <div class="grid-2">
+          <div>
+            <h4>Education</h4>
+            <p>Dhanalakshmi Srinivasan Engineering College — B.Tech (AI & Data Science)<br/><strong>CGPA:</strong> 8.1/10</p>
+
+            <h4 style="margin-top:14px">Internships</h4>
+            <ul class="muted">
+              <li><strong>Data Science Intern</strong> — Altair (AICTE & EduSkills)</li>
+              <li><strong>Data Science Intern</strong> — Internship Studio</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>Skills & Tools</h4>
+            <ul class="bullets">
+              <li>Python · SQL · MySQL · Pandas · NumPy</li>
+              <li>Scikit-learn · TensorFlow · Keras · Matplotlib · Seaborn</li>
+              <li>Power BI · Tableau · Excel · FastAPI · Git</li>
+            </ul>
+          </div>
         </div>
-        <div>
-          <h3>Tools & Languages</h3>
-          <ul class="bullets">
-            <li>Python · SQL · MySQL · Pandas · NumPy</li>
-            <li>Scikit-learn · TensorFlow · Keras · Matplotlib · Seaborn</li>
-            <li>Power BI · Tableau · Excel · FastAPI · Git</li>
-          </ul>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="card section">
+        <h3>Selected Projects</h3>
+        <div class="projects-grid">
+          <article class="project card">
+            <div class="thumb">Fake Voice Detection</div>
+            <h4>Audio Deepfake Detection</h4>
+            <p class="muted">Built with Librosa, MFCC features. Models: CNN & LSTM. Detects AI-synthesized vs real speech (Python/TensorFlow).</p>
+            <div class="tags"><span>Deep Learning</span><span>Audio</span><span>TensorFlow</span></div>
+            <div class="proj-actions">
+              <a class="btn small" href="#" target="_blank">View</a>
+              <a class="btn small ghost" href="#" target="_blank">GitHub</a>
+            </div>
+          </article>
+
+          <article class="project card">
+            <div class="thumb">Sales Forecasting</div>
+            <h4>Time Series Forecasting</h4>
+            <p class="muted">Forecasting using LSTM and seasonal decomposition.</p>
+            <div class="tags"><span>LSTM</span><span>Time Series</span></div>
+            <div class="proj-actions"><a class="btn small" href="#">View</a><a class="btn small ghost" href="#">GitHub</a></div>
+          </article>
+
+          <article class="project card">
+            <div class="thumb">BI Dashboard</div>
+            <h4>Interactive Dashboards</h4>
+            <p class="muted">KPI dashboards built with PowerBI and Plotly for executive reporting.</p>
+            <div class="tags"><span>Visualization</span><span>PowerBI</span></div>
+            <div class="proj-actions"><a class="btn small" href="#">View</a><a class="btn small ghost" href="#">GitHub</a></div>
+          </article>
+
+          <article class="project card">
+            <div class="thumb">Banking API</div>
+            <h4>FastAPI CRUD Service</h4>
+            <p class="muted">REST API for banking operations with CRUD endpoints and validation.</p>
+            <div class="tags"><span>FastAPI</span><span>Python</span></div>
+            <div class="proj-actions"><a class="btn small" href="#">View</a><a class="btn small ghost" href="#">GitHub</a></div>
+          </article>
+
+          <article class="project card">
+            <div class="thumb">NLP Suite</div>
+            <h4>Text Analytics & Transformers</h4>
+            <p class="muted">Pipelines for sentiment analysis, NER, and transformer fine-tuning.</p>
+            <div class="tags"><span>NLP</span><span>Transformers</span></div>
+            <div class="proj-actions"><a class="btn small" href="#">View</a><a class="btn small ghost" href="#">GitHub</a></div>
+          </article>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="card section">
-      <h2>Selected Projects</h2>
+      <!-- CERTIFICATIONS -->
+      <section id="certifications" class="card section">
+        <h3>Certifications & Workshops</h3>
+        <div class="cert-grid">
+          <article class="cert card">
+            <h4>National Level Workshop — Database & Data Analytics</h4>
+            <p class="muted">K. Ramakrishnan College of Engineering — Apr 29–30, 2024</p>
+            <a class="cert-link" href="certificates/national-workshop.pdf" target="_blank">View Certificate</a>
+          </article>
 
-      <div class="projects-grid">
-        <article class="project card">
-          <div class="thumb">Fake Voice Detection</div>
-          <h4>Audio Deepfake Detection</h4>
-          <p class="muted">Built using Librosa, MFCC features; trained CNN & LSTM models to classify real vs synthetic speech (Python/TF).</p>
-          <div class="tags"><span>Deep Learning</span><span>Audio</span><span>TensorFlow</span></div>
-          <div class="proj-actions">
-            <a class="btn small" href="#" target="_blank">View</a>
-            <a class="btn small ghost" href="#" target="_blank">GitHub</a>
-          </div>
-        </article>
+          <article class="cert card">
+            <h4>AWS Academy Cloud Foundation</h4>
+            <p class="muted">20 Hours — Cloud fundamentals & EC2 basics</p>
+            <a class="cert-link" href="#" target="_blank">Issuer / Details</a>
+          </article>
 
-        <article class="project card">
-          <div class="thumb">Sales Forecasting</div>
-          <h4>Time Series Forecasting</h4>
-          <p class="muted">Forecasting sales using LSTM models and seasonal decomposition techniques.</p>
-          <div class="tags"><span>LSTM</span><span>Time Series</span></div>
-          <div class="proj-actions">
-            <a class="btn small" href="#" target="_blank">View</a>
-            <a class="btn small ghost" href="#" target="_blank">GitHub</a>
-          </div>
-        </article>
-
-        <article class="project card">
-          <div class="thumb">BI Dashboard</div>
-          <h4>Interactive Dashboards</h4>
-          <p class="muted">Interactive KPI dashboards built with PowerBI and Plotly for advanced analytics.</p>
-          <div class="tags"><span>Visualization</span><span>PowerBI</span></div>
-          <div class="proj-actions">
-            <a class="btn small" href="#" target="_blank">View</a>
-            <a class="btn small ghost" href="#" target="_blank">GitHub</a>
-          </div>
-        </article>
-
-        <article class="project card">
-          <div class="thumb">Banking API</div>
-          <h4>FastAPI CRUD Service</h4>
-          <p class="muted">Secure REST API for banking operations with CRUD endpoints, validation & tests.</p>
-          <div class="tags"><span>FastAPI</span><span>Python</span></div>
-          <div class="proj-actions">
-            <a class="btn small" href="#" target="_blank">View</a>
-            <a class="btn small ghost" href="#" target="_blank">GitHub</a>
-          </div>
-        </article>
-
-        <article class="project card">
-          <div class="thumb">NLP Suite</div>
-          <h4>Text Analytics & Transformers</h4>
-          <p class="muted">Pipelines for sentiment analysis, NER and transformer fine-tuning for text tasks.</p>
-          <div class="tags"><span>NLP</span><span>Transformers</span></div>
-          <div class="proj-actions">
-            <a class="btn small" href="#" target="_blank">View</a>
-            <a class="btn small ghost" href="#" target="_blank">GitHub</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- CERTIFICATIONS -->
-    <section id="certifications" class="card section">
-      <h2>Certifications & Workshops</h2>
-      <div class="cert-grid">
-        <article class="cert card">
-          <h4>National Level Workshop — Database & Data Analytics</h4>
-          <p class="muted">K. Ramakrishnan College of Engineering — Apr 29–30, 2024</p>
-          <a class="cert-link" href="certificates/national-workshop.pdf" target="_blank" rel="noopener">View Certificate</a>
-        </article>
-
-        <article class="cert card">
-          <h4>AWS Academy Cloud Foundation</h4>
-          <p class="muted">20 Hours — Cloud fundamentals & EC2 basics</p>
-          <a class="cert-link" href="#" target="_blank" rel="noopener">Issuer / Details</a>
-        </article>
-
-        <article class="cert card">
-          <h4>NPTEL — Data Analytics with Python (Top Performer)</h4>
-          <p class="muted">Jan–Apr 2025</p>
-          <a class="cert-link" href="certificates/nptel-data-analytics.pdf" target="_blank" rel="noopener">View Certificate</a>
-        </article>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="card section">
-      <h2>Contact</h2>
-      <p class="muted">I'd love to collaborate — send a short message below.</p>
-
-      <form id="contactForm" class="contact-form">
-        <input type="text" name="name" id="name" placeholder="Your name" required>
-        <input type="email" name="email" id="email" placeholder="Your email" required>
-        <textarea name="message" id="message" rows="5" placeholder="Message" required></textarea>
-        <div class="form-actions">
-          <button class="btn primary" type="submit">Send Message</button>
-          <a class="btn ghost" href="resume.pdf" download>Download Resume</a>
+          <article class="cert card">
+            <h4>NPTEL — Data Analytics with Python (Top Performer)</h4>
+            <p class="muted">Jan–Apr 2025</p>
+            <a class="cert-link" href="certificates/nptel-data-analytics.pdf" target="_blank">View Certificate</a>
+          </article>
         </div>
-      </form>
+      </section>
 
-      <div id="formNotice" class="muted small" aria-live="polite"></div>
-    </section>
+      <!-- CONTACT -->
+      <section id="contact" class="card section">
+        <h3>Contact</h3>
+        <p class="muted">I'd love to hear about internships, collaborations or projects. Send a short message below.</p>
 
-    <footer class="footer">
-      <div>Designed & Developed by <strong>Venkadesh K</strong> • © <span id="year"></span></div>
-    </footer>
-  </main>
+        <form id="contactForm" class="contact-form">
+          <input type="text" id="name" placeholder="Your name" required>
+          <input type="email" id="email" placeholder="Your email" required>
+          <textarea id="message" rows="5" placeholder="Message" required></textarea>
+          <div class="form-actions">
+            <button class="btn primary" type="submit">Send Message</button>
+            <a class="btn ghost" href="resume.pdf" download>Download Resume</a>
+          </div>
+          <div id="formNotice" class="muted small" aria-live="polite"></div>
+        </form>
+      </section>
+
+      <footer class="footer">
+        <div>Designed & Developed by <strong>Venkadesh K</strong> • © <span id="yearFooter"></span></div>
+      </footer>
+    </main>
+  </div>
 
   <script src="script.js" defer></script>
 </body>
