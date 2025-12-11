@@ -3,76 +3,220 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Venkadesh K — Data Analytics Analyst</title>
-  <meta name="description" content="Venkadesh K — Data Analytics Analyst. B.Tech student specializing in AI & Data Science. Projects: Fake Voice Detection, Data Analysis, ML.">
-  <!-- Open Graph -->
-  <meta property="og:title" content="Venkadesh K — Data Analytics Analyst" />
-  <meta property="og:description" content="AI & Data Science student. Projects: Fake Voice Detection using ML & DL." />
-  <link rel="stylesheet" href="styles.css">
+  <title>Venkadesh K — Data Scientist</title>
+  <meta name="description" content="Portfolio of Venkadesh K — Final-year B.Tech AI & Data Science. Data Scientist, ML, DL, analytics." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="hero">
-    <div class="container">
-      <h1>Venkadesh K</h1>
-      <p class="title">Data Analytics Analyst — AI & Data Science student</p>
-      <p class="summary">I build ML solutions and data visualizations. Recent project: Fake Voice Detection using ML & DL.</p>
-      <a class="btn" href="Venkadesh_Resume.pdf" download>Download Resume</a>
-      <a class="btn ghost" href="#projects">View Projects</a>
+  <div class="stage" aria-hidden="true">
+    <div class="orb a"></div>
+    <div class="orb b"></div>
+    <div class="orb c"></div>
+  </div>
+
+  <header class="nav-wrap">
+    <div class="nav container">
+      <div class="brand">
+        <div class="logo">VK</div>
+        <div class="brand-text">
+          <div class="name">Venkadesh K</div>
+          <div class="role">Data Scientist — Final-year B.Tech (AI & Data Science)</div>
+        </div>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
-  <nav class="nav" id="nav">
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#experience">Experience</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
   <main class="container">
-    <section id="about">
-      <h2>About</h2>
-      <p><!-- Replace with your 2–3 line summary from resume --></p>
+    <!-- HERO -->
+    <section id="home" class="hero card">
+      <div class="hero-left">
+        <div class="kicker">Machine Learning • Deep Learning • Data Visualization</div>
+        <h1>Hi, I’m <span class="gradient-name">Venkadesh K</span></h1>
+        <p class="lead">Final-year B.Tech AI & Data Science student. I build ML models, analyze complex datasets, and create visual, production-ready solutions.</p>
+
+        <div class="typewrap">
+          <div class="type-label">I work with</div>
+          <div class="typewriter" id="typewriter"></div>
+        </div>
+
+        <div class="hero-ctas">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn ghost" href="resume.pdf" download>Download Resume</a>
+        </div>
+
+        <div class="badges">
+          <span class="badge">Python</span>
+          <span class="badge">TensorFlow</span>
+          <span class="badge">FastAPI</span>
+          <span class="badge">PowerBI</span>
+        </div>
+      </div>
+
+      <aside class="hero-right">
+        <div class="card mini">
+          <div class="avatar">VK</div>
+          <div class="vinfo">
+            <strong>Venkadesh K</strong>
+            <div class="muted">Mayiladuthurai, Tamil Nadu</div>
+          </div>
+        </div>
+
+        <div class="card contact-card">
+          <div class="muted">Contact</div>
+          <div class="strong">collegevenkadesh@gmail.com</div>
+          <div class="muted">+91 8925324110</div>
+          <div class="socials">
+            <a href="https://github.com/venkadesh15" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/in/venkadesh-k-2003ai" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+      </aside>
     </section>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul class="skills-grid">
-        <li>Python</li>
-        <li>NumPy / Pandas</li>
-        <li>SQL</li>
-        <li>Power BI / Tableau</li>
-        <li>Deep Learning (CNN / LSTM)</li>
-        <li>Git / GitHub</li>
-      </ul>
+    <!-- ABOUT -->
+    <section id="about" class="card section">
+      <h2>About Me</h2>
+      <p class="muted">
+        Final-year B.Tech Artificial Intelligence & Data Science student with hands-on experience in data analysis, visualization,
+        and machine learning through academic projects and internships. Proficient in Python, SQL, Excel and industry frameworks —
+        adept at solving problems and delivering actionable insights. (Resume & internship details included below.) :contentReference[oaicite:1]{index=1}
+      </p>
+
+      <div class="split">
+        <div>
+          <h3>Education</h3>
+          <p>Dhanalakshmi Srinivasan Engineering College — B.Tech (AI & Data Science)<br/>Current CGPA: <strong>8.1/10</strong></p>
+        </div>
+        <div>
+          <h3>Tools & Languages</h3>
+          <ul class="bullets">
+            <li>Python · SQL · MySQL · Pandas · NumPy</li>
+            <li>Scikit-learn · TensorFlow · Keras · Matplotlib · Seaborn</li>
+            <li>Power BI · Tableau · Excel · FastAPI · Git</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <article class="project">
-        <h3>Fake Voice Detection</h3>
-        <p>Built a classifier using MFCC features and CNN/LSTM models to detect synthetic voices. Tech: Librosa, Keras, scikit-learn, Jupyter Notebook.</p>
-        <a href="#" class="small">Repo / Notebook</a>
-      </article>
+    <!-- PROJECTS -->
+    <section id="projects" class="card section">
+      <h2>Selected Projects</h2>
+
+      <div class="projects-grid">
+        <article class="project card">
+          <div class="thumb">Fake Voice Detection</div>
+          <h4>Audio Deepfake Detection</h4>
+          <p class="muted">Built using Librosa, MFCC features; trained CNN & LSTM models to classify real vs synthetic speech (Python/TF).</p>
+          <div class="tags"><span>Deep Learning</span><span>Audio</span><span>TensorFlow</span></div>
+          <div class="proj-actions">
+            <a class="btn small" href="#" target="_blank">View</a>
+            <a class="btn small ghost" href="#" target="_blank">GitHub</a>
+          </div>
+        </article>
+
+        <article class="project card">
+          <div class="thumb">Sales Forecasting</div>
+          <h4>Time Series Forecasting</h4>
+          <p class="muted">Forecasting sales using LSTM models and seasonal decomposition techniques.</p>
+          <div class="tags"><span>LSTM</span><span>Time Series</span></div>
+          <div class="proj-actions">
+            <a class="btn small" href="#" target="_blank">View</a>
+            <a class="btn small ghost" href="#" target="_blank">GitHub</a>
+          </div>
+        </article>
+
+        <article class="project card">
+          <div class="thumb">BI Dashboard</div>
+          <h4>Interactive Dashboards</h4>
+          <p class="muted">Interactive KPI dashboards built with PowerBI and Plotly for advanced analytics.</p>
+          <div class="tags"><span>Visualization</span><span>PowerBI</span></div>
+          <div class="proj-actions">
+            <a class="btn small" href="#" target="_blank">View</a>
+            <a class="btn small ghost" href="#" target="_blank">GitHub</a>
+          </div>
+        </article>
+
+        <article class="project card">
+          <div class="thumb">Banking API</div>
+          <h4>FastAPI CRUD Service</h4>
+          <p class="muted">Secure REST API for banking operations with CRUD endpoints, validation & tests.</p>
+          <div class="tags"><span>FastAPI</span><span>Python</span></div>
+          <div class="proj-actions">
+            <a class="btn small" href="#" target="_blank">View</a>
+            <a class="btn small ghost" href="#" target="_blank">GitHub</a>
+          </div>
+        </article>
+
+        <article class="project card">
+          <div class="thumb">NLP Suite</div>
+          <h4>Text Analytics & Transformers</h4>
+          <p class="muted">Pipelines for sentiment analysis, NER and transformer fine-tuning for text tasks.</p>
+          <div class="tags"><span>NLP</span><span>Transformers</span></div>
+          <div class="proj-actions">
+            <a class="btn small" href="#" target="_blank">View</a>
+            <a class="btn small ghost" href="#" target="_blank">GitHub</a>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <section id="experience">
-      <h2>Experience</h2>
-      <p><strong>Data Science Intern</strong> — Altair (Jan 2025 - Mar 2025) — Virtual</p>
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" class="card section">
+      <h2>Certifications & Workshops</h2>
+      <div class="cert-grid">
+        <article class="cert card">
+          <h4>National Level Workshop — Database & Data Analytics</h4>
+          <p class="muted">K. Ramakrishnan College of Engineering — Apr 29–30, 2024</p>
+          <a class="cert-link" href="certificates/national-workshop.pdf" target="_blank" rel="noopener">View Certificate</a>
+        </article>
+
+        <article class="cert card">
+          <h4>AWS Academy Cloud Foundation</h4>
+          <p class="muted">20 Hours — Cloud fundamentals & EC2 basics</p>
+          <a class="cert-link" href="#" target="_blank" rel="noopener">Issuer / Details</a>
+        </article>
+
+        <article class="cert card">
+          <h4>NPTEL — Data Analytics with Python (Top Performer)</h4>
+          <p class="muted">Jan–Apr 2025</p>
+          <a class="cert-link" href="certificates/nptel-data-analytics.pdf" target="_blank" rel="noopener">View Certificate</a>
+        </article>
+      </div>
     </section>
 
-    <section id="contact">
+    <!-- CONTACT -->
+    <section id="contact" class="card section">
       <h2>Contact</h2>
-      <p>Email: <a href="mailto:collegevenkadesh@gmail.com">collegevenkadesh@gmail.com</a></p>
-      <p>Phone: 8925324110</p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/venkadesh-k-2003ai" target="_blank">venkadesh-k-2003ai</a></p>
+      <p class="muted">I'd love to collaborate — send a short message below.</p>
+
+      <form id="contactForm" class="contact-form">
+        <input type="text" name="name" id="name" placeholder="Your name" required>
+        <input type="email" name="email" id="email" placeholder="Your email" required>
+        <textarea name="message" id="message" rows="5" placeholder="Message" required></textarea>
+        <div class="form-actions">
+          <button class="btn primary" type="submit">Send Message</button>
+          <a class="btn ghost" href="resume.pdf" download>Download Resume</a>
+        </div>
+      </form>
+
+      <div id="formNotice" class="muted small" aria-live="polite"></div>
     </section>
+
+    <footer class="footer">
+      <div>Designed & Developed by <strong>Venkadesh K</strong> • © <span id="year"></span></div>
+    </footer>
   </main>
 
-  <footer>
-    <p>© Venkadesh K</p>
-  </footer>
-
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
